@@ -1,0 +1,23 @@
+{
+  "name": "wa-adjuntos",
+  "version": "0.1.0",
+  "description": "Captura puntual de adjuntos de chats de WhatsApp (solo lectura)",
+  "main": "src/captar.js",
+  "scripts": {
+    "captar": "node src/captar.js",
+    "descubrir": "node src/descubrir.js",
+    "continuo": "node src/captar.js --continuo",
+    "metricas": "node src/metricas.js",
+    "probar": "node src/probar-offline.js && node src/probar-webhook.js",
+    "probar-webhook": "node src/probar-webhook.js"
+  },
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "baileys": "^6.7.24",
+    "pino": "^10.3.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "private": true
+}

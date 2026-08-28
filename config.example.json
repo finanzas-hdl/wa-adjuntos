@@ -1,0 +1,32 @@
+{
+  "_comentario": "Copiá este archivo a config.json y completá la whitelist. Los JID se descubren con: npm run descubrir",
+  "whitelist": [
+    {
+      "jid": "5491100000000@s.whatsapp.net",
+      "alias": "chat-de-prueba"
+    },
+    {
+      "jid": "120363000000000000@g.us",
+      "alias": "grupo-de-prueba"
+    }
+  ],
+  "tipos": [
+    "document",
+    "image",
+    "video",
+    "audio"
+  ],
+  "carpetaMedia": "media",
+  "descubrir": {
+    "escucharSegundos": 120
+  },
+  "metricas": {
+    "intervaloSegundos": 60
+  },
+  "webhook": {
+    "_comentario": "Opcional. Sin url, el daemon no avisa a nadie. Se dispara DESPUES de guardar el archivo: si el receptor esta caido, la captura sigue y el evento queda en logs/webhook-fallidos.jsonl",
+    "url": "",
+    "secreto": "",
+    "timeoutMs": 5000
+  }
+}

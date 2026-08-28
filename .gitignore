@@ -1,0 +1,16 @@
+# Estado de sesión de WhatsApp — credenciales del dispositivo vinculado.
+# NUNCA versionar ni copiar: con esto se abre la cuenta.
+auth/
+
+# Adjuntos descargados y su manifiesto.
+media/
+data/
+
+# Logs y métricas del spike.
+logs/
+
+# Config real (tiene los JIDs de los chats).
+config.json
+
+node_modules/
+.prueba/
