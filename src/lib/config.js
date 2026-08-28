@@ -4,6 +4,9 @@ const path = require('path')
 const RAIZ = path.resolve(__dirname, '..', '..')
 
 const DEFAULTS = {
+  // Así se ve el proceso en el teléfono, en Dispositivos vinculados. Conviene que
+  // diga de quién es: alguien que ve un dispositivo desconocido lo cierra.
+  nombreDispositivo: 'wa-adjuntos',
   tipos: ['document', 'image', 'video', 'audio'],
   carpetaMedia: 'media',
   descubrir: { escucharSegundos: 120 },

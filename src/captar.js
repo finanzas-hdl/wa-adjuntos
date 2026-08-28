@@ -71,7 +71,7 @@ async function main () {
   const sesion = await conectar({
     rutas: cfg.rutas,
     log,
-    nombreDispositivo: 'wa-adjuntos',
+    nombreDispositivo: cfg.nombreDispositivo,
     onSocket: (sock) => {
       sock.ev.on('messages.upsert', async (upsert) => {
         ultimaNovedad = Date.now()

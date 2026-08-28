@@ -1,5 +1,6 @@
 {
   "_comentario": "Copiá este archivo a config.json y completá la whitelist. Los JID se descubren con: npm run descubrir",
+  "nombreDispositivo": "LFR-adjuntos-Patri",
   "whitelist": [
     {
       "jid": "5491100000000@s.whatsapp.net",

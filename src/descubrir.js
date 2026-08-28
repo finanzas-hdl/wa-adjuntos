@@ -27,7 +27,7 @@ async function main () {
   sesion = await conectar({
     rutas: cfg.rutas,
     log,
-    nombreDispositivo: 'wa-adjuntos',
+    nombreDispositivo: cfg.nombreDispositivo || 'wa-adjuntos',
     onSocket: (sock) => {
       sock.ev.on('connection.update', async (u) => {
         if (u.connection !== 'open') return
